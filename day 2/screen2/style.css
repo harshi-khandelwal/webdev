@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  header {
+    background: #000;
+    color: #fff;
+    /* padding: 1rem 0rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: 70px;
+  }
+  
+  nav a {
+    margin: 0 1.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    padding: 0.5rem 1rem;
+    background: #000;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .main-content {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .options {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .red {
+    color: red;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background: #eee;
+    /* margin-right: 0.5rem; */
+    cursor: pointer;
+    
+    width: 100px;
+    height: 50px;
+   
+  }
+  
+  .tab.active {
+    background: #eee; 
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
+  
+  .filters {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .filters p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .buttons button {
+    margin-right: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid black;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 32px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  
+  .buttons .active {
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .cards {
+    display: grid;
+    grid-auto-flow: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    height: 50px;
+
+  }
+  
+  .card {
+    flex: 1 1 calc(35% - 1rem);
+    display: flex;
+    /* align-items: column; */
+    padding: 1rem;
+    border: 1px solid #eee;
+    background: #f8f8f8;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: left;
+  }
+  
+  .card img {
+    width: 32px;
+    margin-right: 1rem;
+  }
+  
+  
+  
+  .lock-icon {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar .promo-card {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .promo-card img {
+    width: 100%;
+    border-radius: 8px;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  .tag {
+    background: #4c57db;
+    color: #fff;
+    font-size: 0.8rem;
+    padding:  0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  .promo-card h1 {
+    font-size: 1.6rem;
+    
+    color: rgb(0, 0, 88);
+  }
+  
+  .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 0.2rem;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10rem;
+    text-align: right;
+  }
+  
+  .validity {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    display: flex;
+    margin: 0.2rem;
+  }
+  
+  .buy-btn {
+    padding: 0.5rem 1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* darken background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; 
+    
+  }
+  
+  
+
+  .course-enrol{
+    flex: 1 1 calc(45% - 1rem);
+    display: flex;
+    /* align-items: column; */
+    padding: 0.2rem;
+    /* border: 1px solid #eee; */
+    background: white;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: left;
+    font-weight: 600;
+    font-size: 20px;
+    
+  }
+
+  .popup {
+    background: white;
+    padding:15px 20px;
+    margin: 0px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: popup 0.3s ease;
+    width: 40%;
+
+  }
+  
+  .custom-icon{
+    font-size: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .enrol-y{
+    font-size: 18px;
+  }
+
+  .login-access{
+    margin-top: 0.1rem;
+    font-weight: 400;
+    font-size: 12px;
+    color: #B1B0B1;
+
+  }
+
+  .login-access a{
+    color: #84b6e5;
+    text-decoration: none;
+  }
+
+  .last{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #B1B0B1;
+  }
+
+  .last a{
+    color: #84b6e5;
+    text-decoration: none;
+  }
+  /* Optional: popup animation */
+@keyframes popup {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
